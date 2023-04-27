@@ -26,13 +26,16 @@ class PosibleToCorrectScore {
             if (val < 1 || val > 12) throw new IsInInterval()
             if (val >= 6 && val <= 8) throw new IsHolidays()
         } catch (err) {
-            if (err instanceof IsNotANumber)
+            if (err instanceof IsNotANumber){
+                alert(err.message)
                 document.querySelector('.month').value = 0
-            else if (err instanceof IsInInterval)
+            } else if (err instanceof IsInInterval){
+                alert(err.message)
                 document.querySelector('.month').value = 0
-            else if (err instanceof IsHolidays)
+            } else if (err instanceof IsHolidays){
+                alert(err.message)
                 document.querySelector('.month').value = 0
-            else return false
+            } else return false
         }
         return true
     }
@@ -42,11 +45,13 @@ class PosibleToCorrectScore {
             if (isNaN(val)) throw new IsNotANumber()
             if (val < 1 || val > 100) throw new IsInInterval()
         } catch (err) {
-            if (err instanceof IsNotANumber)
+            if (err instanceof IsNotANumber){
+                alert(err.message)
                 document.querySelector('.score').value = 0
-            else if (err instanceof IsInInterval)
+            } else if (err instanceof IsInInterval){
+                alert(err.message)
                 document.querySelector('.score').value = 0
-            else return false
+            } else return false
         }
         return true
     }
