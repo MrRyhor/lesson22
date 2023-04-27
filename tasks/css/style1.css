@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,700');
+
+body {
+    font-family: 'Lato';
+    background-color: #00a1a3;
+    background-image: linear-gradient(to right, #005083, #23704e);
+}
+
+.title {
+    padding-top: 100px;
+}
+
+h1 {
+    display: block;
+    max-width: 170px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(251, 255, 26);
+    font-weight: 700;
+}
+
+p {
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    max-width: 1000px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 5px 2px rgba(34, 60, 80, 0.8);
+}
+
+input {
+    margin-left: 10px;
+    padding: 3px 3px;
+}
+
+button {
+    margin-left: 10px;
+    border: 2px solid rgb(251, 255, 26);
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(251, 255, 26);
+    padding: 3px 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(251, 255, 26);
+    color: #000;
+}
+
+.label-add {
+    color: rgb(251, 255, 26);
+}
+
+.label-minus {
+    color: rgb(251, 255, 26);
+}
+
+.total-balance {
+    color: rgb(251, 255, 26);
+}
+
+.input-days {
+    width: 50px;
+}
+
+.credit-limit {
+    color: rgb(251, 255, 26);
+}
+
+.label-days {
+    color: rgb(251, 255, 26);
+}
+
+.interest-loan {
+    color: rgb(251, 255, 26);
+}
+
+.container-bank {
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px rgba(34, 60, 80, 0.8);
+    color: rgb(251, 255, 26);    
+}
+.clients{
+    color: #fff;
+    margin-top: 10px;    
+}
+.gold-clients{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}
+.total-balance{
+    margin-bottom: 10px;
+}
