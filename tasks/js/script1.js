@@ -151,6 +151,7 @@ class GoldenClient extends Client {
         btnDays.onclick = this.getInterestOnLoan.bind(this, this.CreditLimit, this.creditRate)
         labelDays.append(btnDays)
         const btnDaysReset = ElementsCreator.createHTMLElement({ tag: 'button', props: { innerText: 'Reset' } })
+        btnDaysReset.onclick = this.clearInputDays.bind(this)
         labelDays.append(btnDaysReset)
         this.interestOnLoan = ElementsCreator.createHTMLElement({ tag: 'div', props: { className: 'interest-loan', innerText: `Пеня составит, USD: ` } })
         container.append(this.interestOnLoan)
